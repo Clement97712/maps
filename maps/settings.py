@@ -119,3 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '%s/pages/static/' % BASE_DIR
+STATIC_ROOT = "%s/static/" % BASE_DIR
+STATICFILES_DIRS = [
+    "%s/pages/static/css" % BASE_DIR
+]
